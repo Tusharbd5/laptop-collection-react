@@ -1,9 +1,13 @@
 import React from 'react';
+import Item from '../Item/Item';
 
-const Cart = props => {
+const Cart = ({ cart }) => {
+
     return (
         <div>
-
+            {
+                cart.map(item => <Item item={item}></Item>)
+            }
         </div>
     );
 };
