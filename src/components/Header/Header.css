@@ -1,0 +1,19 @@
+.header {
+    height: 86px;
+    background-color: rgb(36, 49, 121);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header img {
+    height: 50px;
+    width: 65px;
+    margin-right: 10px;
+}
+
+.header-title {
+    font-size: 40px;
+    font-weight: 500;
+}
