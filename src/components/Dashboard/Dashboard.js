@@ -23,6 +23,9 @@ const Dashboard = () => {
     const handleChange = (item) => {
         setCart([item[Math.floor(Math.random() * item.length)]]);
     }
+    const choseAgain = () => {
+        setCart([]);
+    }
 
     return (
         <div className='display-content'>
@@ -39,7 +42,8 @@ const Dashboard = () => {
                 <div className='cart'>
                     <h3>Selected Items</h3>
                     <Cart cart={cart}
-                        handleChange={handleChange}></Cart>
+                        handleChange={handleChange}
+                        choseAgain={choseAgain}></Cart>
                 </div>
             </div>
         </div>

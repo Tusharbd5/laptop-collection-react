@@ -1,15 +1,10 @@
 import Item from '../Item/Item';
+import './Cart.css'
 
 const Cart = (props) => {
 
-    const { cart, handleChange } = props;
+    const { cart, handleChange, choseAgain } = props;
 
-    // const [random, setRandom] = useState([]);
-    // const randomItem = () => {
-    //     let element = [cart[Math.floor(Math.random() * cart.length)]];
-    //     setRandom(element);
-
-    // }
     return (
         <div>
             {
@@ -17,7 +12,8 @@ const Cart = (props) => {
                     key={item.id}></Item>)
             }
 
-            <button onClick={() => { handleChange(cart) }}>Choose Random</button>
+            <button className='random-btn' onClick={() => { handleChange(cart) }}>Choose 1 For Me</button>
+            <button className='random-btn' onClick={choseAgain}>Choose Again</button>
         </div>
     );
 };

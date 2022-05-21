@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Project Name: Laptop Collection Bazar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project has build with [Create React App](https://github.com/Programming-Hero-Web-Course4/lucky-one-Tusharbd5).
 
 ## Available Scripts
 
@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+You can run this project with development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\

@@ -88,5 +88,23 @@
     "img": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/v14/v14-101-500x500.jpg",
     "shipping": 1,
     "quantity": 0
+  },
+  {
+    "id": 11,
+    "category": "Laptop",
+    "name": "Lenovo IdeaPad Slim 3i 15ITL Core i5 11th Gen MX350 2GB Graphics 15.6 inch FHD Laptop",
+    "price": 76500,
+    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3i/slim-3i-500x500.jpg",
+    "shipping": 1,
+    "quantity": 0
+  },
+  {
+    "id": 12,
+    "category": "Laptop",
+    "name": "Lenovo IdeaPad Flex 5 AMD Ryzen 5 5500U 16GB 14 inch FHD Touch Laptop",
+    "price": 77000,
+    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-flex-5/ideapad-flex-5-360degree-500x500.jpg",
+    "shipping": 1,
+    "quantity": 0
   }
 ]
