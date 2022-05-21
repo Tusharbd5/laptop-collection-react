@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
+
 import Product from '../Product/Product';
 import './Dashboard.css'
 
 const Dashboard = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
+
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
@@ -17,8 +19,11 @@ const Dashboard = () => {
         if (!exists) {
             setCart([...cart, selectedProduct]);
         }
-
     }
+    const handleChange = (item) => {
+        setCart([item[Math.floor(Math.random() * item.length)]]);
+    }
+
     return (
         <div className='display-content'>
             <div className='item-content'>
@@ -33,7 +38,8 @@ const Dashboard = () => {
             <div className='cart-content'>
                 <div className='cart'>
                     <h3>Selected Items</h3>
-                    <Cart cart={cart}></Cart>
+                    <Cart cart={cart}
+                        handleChange={handleChange}></Cart>
                 </div>
             </div>
         </div>
