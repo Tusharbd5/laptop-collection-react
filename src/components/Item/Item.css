@@ -15,3 +15,9 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+.delete-btn {
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+}

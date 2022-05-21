@@ -23,6 +23,12 @@ const Dashboard = () => {
     const handleChange = (item) => {
         setCart([item[Math.floor(Math.random() * item.length)]]);
     }
+    const deleteTarget = (item) => {
+        const rest = cart.find(target => target.id !== item.id);
+        setCart([rest]);
+
+    }
+
     const choseAgain = () => {
         setCart([]);
     }
@@ -43,7 +49,8 @@ const Dashboard = () => {
                     <h3>Selected Items</h3>
                     <Cart cart={cart}
                         handleChange={handleChange}
-                        choseAgain={choseAgain}></Cart>
+                        choseAgain={choseAgain}
+                        deleteTarget={deleteTarget}></Cart>
                 </div>
             </div>
         </div>

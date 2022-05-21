@@ -1,0 +1,24 @@
+.question {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 30px;
+    background-color: lightblue;
+    justify-items: center;
+}
+
+.half-width {
+    width: 60%;
+    text-align: justify;
+}
+
+.half-width p {
+    font-size: 16px;
+}
+
+@media screen and (max-width:700px) {
+    .question {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+}
