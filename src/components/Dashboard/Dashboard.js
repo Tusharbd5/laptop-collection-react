@@ -24,9 +24,8 @@ const Dashboard = () => {
         setCart([item[Math.floor(Math.random() * item.length)]]);
     }
     const deleteTarget = (item) => {
-        const rest = cart.find(target => target.id !== item.id);
-        setCart([rest]);
-
+        const rest = cart.filter(target => target.id !== item.id);
+        setCart(rest);
     }
 
     const choseAgain = () => {
